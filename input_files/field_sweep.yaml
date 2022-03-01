@@ -1,0 +1,30 @@
+---
+
+#Setup parameters
+DATA_FILE: 'test.txt'
+SAMPLE: 'test'
+T_START: 1.8 #[K]
+H_START: -100 #[Gauss = 10-4T]
+SETTLE: 30 #[s]
+QUICK_RAMP_TEMP: 20 #[K/min]
+QUICK_RAMP_FIELD : 200 #[Gauss/s]
+
+#Measurment parameters
+T_FINAL: 1.7 #desired targeet temp
+H_FINAL: 100 #desired final Field
+VDP: [1, 2, 3] #active vdp configs for measurment
+T_RAMP_MEASURE: 2 #rate to sweep measurement
+H_RAMP_MEASURE: 5 #[Gauss/s]
+DELAY: 5 #settling time before the measurement is recorded
+
+#Lock-in settings
+LIA:
+  ADDRESS: 10
+  TAU: 2 #[ms]
+  SENSITIVITY: 3 
+  FREQUENCY: 13.123
+  AMP: 1 #[V]
+  COUPLING: 'AC'
+  LP_FILTER: 4
+  SYNC_FILTER: 4
+  NOTCH_FILTER: 4
