@@ -3,14 +3,14 @@
 #Setup parameters
 DATA_FILE: 'test.txt'
 SAMPLE: 'test'
-T_START: 1.8 #[K]
+T_START: 300 #[K]
 H_START: -100 #[Gauss = 10-4T]
 SETTLE: 30 #[s]
 QUICK_RAMP_TEMP: 20 #[K/min]
 QUICK_RAMP_FIELD : 200 #[Gauss/s]
 
 #Measurment parameters
-T_FINAL: 1.7 #desired targeet temp
+T_FINAL: 300 #desired targeet temp
 H_FINAL: 100 #desired final Field
 VDP: [1, 2, 3] #active vdp configs for measurment
 T_RAMP_MEASURE: 2 #rate to sweep measurement
